@@ -1,13 +1,13 @@
 const express = require("express");
 
-const { ItemController } = require("./controllers");
+const { TodolistController } = require("./controllers");
 
 const router = express.Router();
 
-router.get("/items", ItemController.browse);
-router.get("/items/:id", ItemController.read);
-router.put("/items/:id", ItemController.edit);
-router.post("/items", ItemController.add);
-router.delete("/items/:id", ItemController.delete);
+router.get("/todolist", TodolistController.browse);
+router.get("/todolist/:id", TodolistController.read);
+router.put("/todolist/:id", TodolistController.edit);
+router.post("/todolist", TodolistController.add);
+router.delete("/todolist/:id", TodolistController.delete);
 
 module.exports = router;

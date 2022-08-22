@@ -23,30 +23,30 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- Structure de la table `item`
+-- Structure de la table `todolist`
 --
 
-CREATE TABLE `item` (
+CREATE TABLE `todolist` (
   `id` int(11) UNSIGNED NOT NULL,
-  `title` varchar(255) NOT NULL
+  `todo` varchar(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Contenu de la table `item`
+-- Contenu de la table `todolist`
 --
 
-INSERT INTO `item` (`id`, `title`) VALUES
-(1, 'Stuff'),
-(2, 'Doodads');
+INSERT INTO `todolist` (`id`, `todo`) VALUES
+(1, 'Faire la série duolingo'),
+(2, 'Faire 10 min de sport');
 
 --
 -- Index pour les tables exportées
 --
 
 --
--- Index pour la table `item`
+-- Index pour la table `todolist`
 --
-ALTER TABLE `item`
+ALTER TABLE `todolist`
   ADD PRIMARY KEY (`id`);
 
 --
@@ -54,9 +54,9 @@ ALTER TABLE `item`
 --
 
 --
--- AUTO_INCREMENT pour la table `item`
+-- AUTO_INCREMENT pour la table `todolist`
 --
-ALTER TABLE `item`
+ALTER TABLE `todolist`
   MODIFY `id` int(11) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
